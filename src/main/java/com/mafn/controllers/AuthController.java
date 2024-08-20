@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mafn.domain.models.Member;
 import com.mafn.services.MemberService;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -17,7 +18,7 @@ public class AuthController {
 
     private final MemberService memberService;
     @PostMapping(value = "/register")
-    public ResponseEntity<Member> registerMember(@RequestBody Member memberBody){
+    public ResponseEntity<Member> registerMember(@Valid @RequestBody Member memberBody){
         Member memberCreated = memberService.registerMember(memberBody);
         return ResponseEntity.status(HttpStatus.CREATED).body(memberCreated);
     }
