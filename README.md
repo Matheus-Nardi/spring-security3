@@ -21,7 +21,7 @@ Um projeto que visa colocar em prática os principais conceitos de autenticaçã
     /src
         /controllers         # Controle das rotas HTTP
         /domain              # Responsável por modelar as entidades
-        /infra               # Responsável por classes que auxiliam na infraestrutura como a securança e controle de execeções
+        /infra               # Responsável por classes que auxiliam na infraestrutura como a securança e controle de exceções
         /repositories        # Responsável pelo acesso ao banco de dados
         /services            # Responsável pelo intermédio entre repository e controller
 /resources                   # Responsável pelas propriedades da aplicação e recursos do banco
