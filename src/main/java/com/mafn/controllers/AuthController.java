@@ -17,8 +17,9 @@ import lombok.RequiredArgsConstructor;
 public class AuthController {
 
     private final MemberService memberService;
+
     @PostMapping(value = "/register")
-    public ResponseEntity<Member> registerMember(@Valid @RequestBody Member memberBody){
+    public ResponseEntity<Member> registerMember(@Valid @RequestBody Member memberBody) {
         Member memberCreated = memberService.registerMember(memberBody);
         return ResponseEntity.status(HttpStatus.CREATED).body(memberCreated);
     }
