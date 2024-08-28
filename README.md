@@ -65,4 +65,11 @@ Para instalar o projeto, siga os passos abaixo:
 
 https://github.com/user-attachments/assets/4b7e0c3e-b07d-4c88-862c-60fecb3007bc
 
+### Utilizando token JWT
+
+https://github.com/user-attachments/assets/f73c6416-23ea-43a7-a726-2b654adb46a5
+
+
+
+
 
